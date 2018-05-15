@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-12 align-self-end text-center pb-70">
-        <a class="scroll-down-2 scroll-down-inverse" href="#" data-scrollto="section-demo"><span></span></a>
+        <a class="scroll-down-2 scroll-down-inverse" href="#" data-scrollto="section-about"><span></span></a>
       </div>
     </div>
   </div>
