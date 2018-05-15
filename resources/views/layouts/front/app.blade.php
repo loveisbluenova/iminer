@@ -9,10 +9,10 @@
     <title>iminer</title>
 
     <!-- Styles -->
-    <link href="{{asset('css/core.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/thesaas.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/core.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/thesaas.min.css')}}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
@@ -31,9 +31,9 @@
 
 @yield('content')
 
-<script src="{{asset('js/core.min.js')}}"></script>
-<script src="{{asset('js/thesaas.min.js')}}"></script>
-<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('asset/js/core.min.js')}}"></script>
+<script src="{{asset('asset/js/thesaas.min.js')}}"></script>
+<script src="{{asset('asset/js/script.js')}}"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 @yield('js')
 </body>
