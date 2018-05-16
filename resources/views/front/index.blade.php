@@ -1,4 +1,4 @@
-@extends('layouts.front.app')
+@extends('layouts.front.home')
 
 @section('content')
   @include('layouts.front.home-slider')

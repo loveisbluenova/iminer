@@ -132,6 +132,21 @@ footer div.col-md-6 {
   }
 
 }
+
 header h2{
   margin-top: 40px;
+}
+
+.btn-success-outline, .btn-danger-outline {
+  font-size: 18px;
+  border: 0;
+  padding: 5px;
+  color: #b5b9bf;
+}
+
+.btn-danger-outline:hover {
+  background: transparent;
+  color: #ff4954;
+  border: none;
+  box-shadow: none;
 }

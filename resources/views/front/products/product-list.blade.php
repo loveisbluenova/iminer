@@ -5,17 +5,18 @@
                 <div class="single-product row">
                     @if($key % 2 == 0)
                         <div class="product col-6" data-aos="fade-right" data-aos-delay="0">
-                            
-                            @if(isset($product->cover))
-                                <img src="{{ asset("storage/$product->cover") }}" alt="{{ $product->name }}" class="img-bordered img-responsive">
-                            @else
-                                <img src="https://placehold.it/263x330" alt="{{ $product->name }}" class="img-bordered img-responsive" />
-                            @endif
+                            <a href="{{ route('front.get.product', [$product->slug]) }}">
+                                @if(isset($product->cover))
+                                    <img src="{{ asset("storage/$product->cover") }}" alt="{{ $product->name }}" class="img-bordered img-responsive">
+                                @else
+                                    <img src="https://placehold.it/263x330" alt="{{ $product->name }}" class="img-bordered img-responsive" />
+                                @endif
+                            </a>
                         </div>
                     @endif
 
                     <div class="product-text col-6" data-aos="fade-down" data-aos-delay="0">
-                        <h1>{{ $product->name }}</h1>
+                        <h1><a href="{{ route('front.get.product', [$product->slug]) }}">{{ $product->name }}</a></h1>
                         <h4>FROM {{ config('cart.currency') }} {{ number_format($product->price, 2) }}</h4>
                         <small>{!! str_limit($product->description, 200) !!}</small>
                         <div class="vcenter">
@@ -31,12 +32,14 @@
                     </div>
                     @if($key % 2 == 1)
                         <div class="product col-6" data-aos="fade-left" data-aos-delay="0">
-                            
-                            @if(isset($product->cover))
-                                <img src="{{ asset("storage/$product->cover") }}" alt="{{ $product->name }}" class="img-bordered img-responsive">
-                            @else
-                                <img src="https://placehold.it/263x330" alt="{{ $product->name }}" class="img-bordered img-responsive" />
-                            @endif
+
+                            <a href="{{ route('front.get.product', [$product->slug]) }}">
+                                @if(isset($product->cover))
+                                    <img src="{{ asset("storage/$product->cover") }}" alt="{{ $product->name }}" class="img-bordered img-responsive">
+                                @else
+                                    <img src="https://placehold.it/263x330" alt="{{ $product->name }}" class="img-bordered img-responsive" />
+                                @endif
+                            </a>
                         </div>
                     @endif
                     <!-- Modal -->

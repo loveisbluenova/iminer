@@ -27,7 +27,7 @@
 </head>
 <body>
 
-@include('layouts.front.header-nav')
+@include('layouts.front.header-cart')
 
 @yield('content')
 
