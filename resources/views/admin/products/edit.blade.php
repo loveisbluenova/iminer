@@ -86,13 +86,13 @@
                                                 <label for="price">Price</label>
                                                 @if($productAttributes->isEmpty())
                                                     <div class="input-group">
-                                                        <span class="input-group-addon">PHP</span>
+                                                        <span class="input-group-addon">usd</span>
                                                         <input type="text" name="price" id="price" placeholder="Price" class="form-control" value="{!! $product->price !!}">
                                                     </div>
                                                 @else
                                                     <input type="hidden" name="price" value="{!! $product->price !!}">
                                                     <div class="input-group">
-                                                        <span class="input-group-addon">PHP</span>
+                                                        <span class="input-group-addon">usd</span>
                                                         <input type="text" id="price" placeholder="Price" class="form-control" value="{!! $product->price !!}" disabled>
                                                     </div>
                                                 @endif
