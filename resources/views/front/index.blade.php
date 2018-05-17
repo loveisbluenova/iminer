@@ -173,20 +173,20 @@
               </div>
               <div class="col-md-4"  data-aos="fade-down" data-aos-delay="150">
                 <div class="team-box">
-                  <img src="{{asset('member/cto-min.jpg')}}">
+                  <img src="{{asset('member/pm-min.jpg')}}">
                   <h3>Yufei Gao</h3>
                   <p>CTO, CO-FOUNDER</p>
-                  <span>Marcus has over 15+ years of experience in data centre construction and management at Hewellet Packard. His in-depth knowledge of power distribution and generation systems, cooling systems,  security and video surveillance systems, and hardware maintenance will keep Miner One safe and efficient.</span>
+                  <span>PhD in EE@Purdue, R&D engineer at Micron Technology, 10+ years in semiconductor and hardware industry. Yunfei is always Inventing beyond what can’t be done. From systems to servers, to advance computing, networking, —reinventing industries as a result. His innovation is a value that sits at the very core of our business strategy and drives everything we do.</span>
                   <br>
                   <a href="#"><i class="fs-25 fa fa-linkedin" style="color: #111"></i></a>
                 </div>
               </div>
               <div class="col-md-4"  data-aos="fade-down" data-aos-delay="300">
                 <div class="team-box">
-                  <img src="{{asset('member/pm-min.jpg')}}">
+                  <img src="{{asset('member/cto-min.jpg')}}">
                   <h3>Marcus Tam</h3>
                   <p>PM, CO-FOUNDER</p>
-                  <span>PhD in EE@Purdue, R&D engineer at Micron Technology, 10+ years in semiconductor and hardware industry. Yunfei is always Inventing beyond what can’t be done. From systems to servers, to advance computing, networking, —reinventing industries as a result. His innovation is a value that sits at the very core of our business strategy and drives everything we do.</span>
+                  <span>Marcus has over 15+ years of experience in data centre construction and management at Hewellet Packard. His in-depth knowledge of power distribution and generation systems, cooling systems,  security and video surveillance systems, and hardware maintenance will keep Miner One safe and efficient.</span>
                   <br>
                   <a href="#"><i class="fs-25 fa fa-linkedin" style="color: #111"></i></a>
                 </div>
