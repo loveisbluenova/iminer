@@ -174,7 +174,7 @@
               <div class="col-md-4"  data-aos="fade-down" data-aos-delay="150">
                 <div class="team-box">
                   <img src="{{asset('member/pm-min.jpg')}}">
-                  <h3>Yufei Gao</h3>
+                  <h3>Yunfei Gao</h3>
                   <p>CTO, CO-FOUNDER</p>
                   <span>PhD in EE@Purdue, R&D engineer at Micron Technology, 10+ years in semiconductor and hardware industry. Yunfei is always Inventing beyond what can’t be done. From systems to servers, to advance computing, networking, —reinventing industries as a result. His innovation is a value that sits at the very core of our business strategy and drives everything we do.</span>
                   <br>
