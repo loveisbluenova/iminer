@@ -50,7 +50,7 @@ section h3 {
 }
 
 .row {
-  margin: 0px !important;
+  margin: 0px;
 }
 
 
@@ -149,4 +149,9 @@ header h2{
   color: #ff4954;
   border: none;
   box-shadow: none;
+}
+
+.contact-row {
+  margin-right: -15px;
+  margin-left: -15px;
 }

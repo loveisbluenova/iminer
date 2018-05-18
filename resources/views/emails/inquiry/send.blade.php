@@ -6,8 +6,6 @@
 
 ## Email : {{ $email }}
 
-## Person type : {{ $iam }}
-
 ## Message : {{ $message }}
 
 Thanks,<br>

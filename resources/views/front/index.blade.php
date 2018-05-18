@@ -278,10 +278,7 @@
 
 
 
-
-
-
-
+      
       <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       | Contact Us
@@ -292,44 +289,64 @@
           <header class="section-header">
             <h2 class="text-muted">FOR MORE INFORMATION</h2>
           </header>
-          <div class="row align-items-center">
-            <div class="col-12 col-md-12">
-              <div class="alert alert-danger" id="contact-error" style="display: none;"></div>
-              <div class="alert alert-success" id="contact-success" style="display: none;">We received your message and will contact you back soon.</div>
+          @if (Session::has('message'))
+            <div class="alert alert-info">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                {{ Session::get('message') }}
             </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <select class="form-control" type="text" id="contact-subject">
-                  <option value="Mining solution">Mining solution</option>
-                  <option value="Specific demand">Specific demand</option>
-                </select>
-                <label for="contact-subject">Subject</label>
+          @endif
+          @if ($errors->any())
+              <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <ul style="margin-bottom: 0;">
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input class="form-control" type="text" id="contact-name" placeholder="Enter your name">
-                <label for="contact-name">Name</label>
+          @endif
+          <form action="{{ route('contact') }}" method="post" class="form" enctype="multipart/form-data">
+            {{ csrf_field() }}
+            <div class="row align-items-center">
+              <div class="col-12 col-md-12">
+                <div class="alert alert-danger" id="contact-error" style="display: none;"></div>
+                <div class="alert alert-success" id="contact-success" style="display: none;">We received your message and will contact you back soon.</div>
               </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <select class="form-control" type="text" id="contact-subject" name="subject">
+                    <option value="Mining solution">Mining solution</option>
+                    <option value="Specific demand">Specific demand</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group contact-name">
+                  <label for="contact-name">Name</label>
+                  <input class="form-control" type="text" id="contact-name" placeholder="Enter your name" name="name">
+                </div>
 
-              <div class="form-group">
-                <input class="form-control" type="text" id="contact-email" placeholder="Enter your email">
-                <label for="contact-email">Email</label>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input class="form-control" type="text" id="contact-email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="row contact-row">
+                  <!-- <div class="g-recaptcha col-md-8" data-sitekey="6Ld47joUAAAAANO8_E-6S1zDK23-fqa_TqQ8-xyi"></div> -->
+                  <div class="col-md-4">
+                    <input type="submit" class="btn btn-lg btn-dark pull-right" id="contact-send" value="Send">
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <textarea class="form-control" rows="4" placeholder="Your Message" id="contact-message"></textarea>
-                <label for="contact-message">Message</label>
-              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea class="form-control" rows="8" placeholder="Your Message" id="contact-message" name="message"></textarea>
+                </div>
 
+              </div>
             </div>
-            <div class="offset-md-6 col-md-6">
-              <div class="g-recaptcha" data-sitekey="6Ld47joUAAAAANO8_E-6S1zDK23-fqa_TqQ8-xyi"></div>
-              <button class="btn btn-lg btn-dark pull-right" id="contact-send">Send</button>
-            </div>
-            </div>
-          </div>
+          </form>
         </div>
       </section>
 
