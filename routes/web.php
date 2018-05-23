@@ -70,6 +70,8 @@ Route::namespace('Auth')->group(function () {
 
 Route::namespace('Front')->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/faq', 'HomeController@fag')->name('fag');
+    Route::get('/cryptopedia', 'HomeController@cryptopedia')->name('cryptopedia');
     Route::group(['middleware' => ['auth']], function () {
         Route::get('accounts', 'AccountsController@index')->name('accounts');
         Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
@@ -85,4 +87,5 @@ Route::namespace('Front')->group(function () {
     Route::get("search", 'ProductController@search')->name('search.product');
     Route::get("{product}", 'ProductController@show')->name('front.get.product');
     Route::post("contact", 'ContactController@send')->name('contact');
+    
 });

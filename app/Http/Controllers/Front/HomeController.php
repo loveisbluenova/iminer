@@ -34,4 +34,15 @@ class HomeController extends Controller
 
         return view('front.index', compact('newArrivals', 'featured'));
     }
+
+    public function fag()
+    {
+        return view('front.faq');
+    }
+
+    public function cryptopedia()
+    {
+        return view('front.cryptopedia');
+    }
+
 }

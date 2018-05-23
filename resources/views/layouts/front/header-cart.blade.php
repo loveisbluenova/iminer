@@ -30,7 +30,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link">Checkout</a>
+                    <a href="/faq" class="nav-link">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/cryptopedia" class="nav-link">Cryptopedia</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('cart.index') }}" class="nav-link">Checkout</a>
                 </li>
 
                 <li class="nav-item">
@@ -45,3 +53,8 @@
     </div>
 </nav>
 <!-- END Topbar -->
+<style type="text/css">
+    .nav-link{
+        color: #0facf3 !important;
+    }
+</style>

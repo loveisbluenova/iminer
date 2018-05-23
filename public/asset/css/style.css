@@ -98,6 +98,7 @@ label {
   box-shadow: 1px 1px 2px #bbbbbb;
   -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
   transition: box-shadow 1s;
+  min-height: 778px;
 }
 
 
@@ -154,4 +155,8 @@ header h2{
 .contact-row {
   margin-right: -15px;
   margin-left: -15px;
+}
+.linkedin_link{
+  position: absolute;
+  bottom: 10px;
 }
